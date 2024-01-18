@@ -38,11 +38,11 @@ public class Lesson2Runner {
 //                : secondNumber;
 
         // int
-        var number = 20;
-
-//        int i = number % 2 == 0
-//                ? number
-//                : 0;
+        int number = 20;
+//
+        int i2 = number % 2 == 0
+                ? number
+                : 0;
 //
 //        System.out.println(i / 2);
 
