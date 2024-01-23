@@ -16,4 +16,14 @@ public class FunctionRunner {
         System.out.println(sum);
         return sum;
     }
+
+    static int maxValue(int number1, int number2) {
+        int max = 0;
+        if (number1 > number2) {
+            max = number1;
+        } else {
+            max = number2;
+        }
+        return max;
+    }
 }
