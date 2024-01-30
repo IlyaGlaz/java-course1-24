@@ -22,5 +22,4 @@ public class Computer {
         System.out.println("Ssd " + ssd);
         System.out.println("Ram " + ram);
     }
-
 }
