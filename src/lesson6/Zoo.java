@@ -1,20 +1,20 @@
 package lesson6;
 
 public class Zoo {
-    Animal[] animals;
+    AnimalFirst[] animals;
 
-    Zoo(Animal[] animals) {
+    Zoo(AnimalFirst[] animals) {
         this.animals = animals;
     }
 
-    void inviteAnimal(Animal animal) {
+    void inviteAnimal(AnimalFirst animal) {
         System.out.println(animals.length);
     }
 
     void calculateFood() {
         int totalFoodWeight = 0;
 
-        for (Animal animal : animals) {
+        for (AnimalFirst animal : animals) {
             totalFoodWeight = totalFoodWeight + animal.getWeight();
         }
 

@@ -1,7 +1,6 @@
 package lesson4;
 
 public class FunctionRunner {
-
     public static void main(String[] args) {
 //        System.out.println();
 //        int number = 22;

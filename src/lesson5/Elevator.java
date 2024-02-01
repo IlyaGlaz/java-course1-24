@@ -6,7 +6,7 @@ public class Elevator {
     int minFloor;
     int currentFloor = 1;
 
-    Elevator(int maxFloor, int minFloor, int currentFloor) {
+    public Elevator(int maxFloor, int minFloor, int currentFloor) {
         this.maxFloor = maxFloor;
         this.minFloor = minFloor;
         this.currentFloor = currentFloor;
