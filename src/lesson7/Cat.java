@@ -1,14 +1,12 @@
 package lesson7;
 
-public class Cat extends AnimalSecond {
-    String color;
+public class Cat extends Animal {
 
     public Cat() {
     }
 
-    public Cat(int height, int weight, String color) {
+    public Cat(int height, int weight) {
         super(height, weight);
-        this.color = color;
         System.out.println("Cat contr");
     }
 
@@ -24,7 +22,6 @@ public class Cat extends AnimalSecond {
     @Override
     public String toString() {
         return "Cat{" +
-                "color='" + color + '\'' +
                 ", height=" + height +
                 ", weight=" + weight +
                 '}';

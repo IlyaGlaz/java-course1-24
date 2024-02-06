@@ -1,6 +1,6 @@
 package lesson7;
 
-public class AnimalSecondRunner {
+public class Animal1Runner {
     public static void main(String[] args) {
 //        AnimalSecond animal = new AnimalSecond(44, 22);
 //        AnimalSecond animal1 = new AnimalSecond(20, 22);
@@ -24,13 +24,11 @@ public class AnimalSecondRunner {
 //        tiger.playWithMe();
 //        tiger.makeSound();
 
-        AnimalSecond animalSecond1 = new AnimalSecond(120, 15);
-        AnimalSecond animalSecond2 = new Cat(55, 20, "Yellow");
-        AnimalSecond animalSecond3 = new Tiger(22, 44, "Black");
+//        Animal animalSecond2 = new Cat(55, 20, "Yellow");
+//        Animal animalSecond3 = new Tiger(22, 44, "Black");
 
-        animalSecond1.makeSound();
-        animalSecond2.makeSound();
-        animalSecond3.makeSound();
+//        animalSecond2.makeSound();
+//        animalSecond3.makeSound();
     }
 
     public static boolean compareWeight(Cat animal, Cat animal1) {

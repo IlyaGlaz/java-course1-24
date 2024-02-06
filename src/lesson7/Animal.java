@@ -1,28 +1,30 @@
 package lesson7;
 
-public class AnimalSecond {
+public abstract class Animal {
     int height;
     int weight;
 
-    AnimalSecond() {
+    Animal() {
 
     }
 
-    public AnimalSecond(int height, int weight) {
+    public Animal(int height, int weight) {
         this.height = height;
         this.weight = weight;
         System.out.println("Animal constr");
     }
 
-    void makeSound() {
-        System.out.println("Some noize");
+    abstract void makeSound();
+
+    void goHunt() {
+        System.out.printf("Hunt");
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        AnimalSecond that = (AnimalSecond) o;
+        Animal that = (Animal) o;
         return height == that.height
                 && weight == that.weight;
     }
