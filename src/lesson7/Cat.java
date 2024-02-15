@@ -1,6 +1,7 @@
 package lesson7;
 
 public class Cat extends Animal {
+    private static final int MAGE_DAMAGE = 20;
 
     public Cat() {
     }

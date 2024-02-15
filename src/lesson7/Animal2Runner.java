@@ -2,7 +2,7 @@ package lesson7;
 
 public class Animal2Runner {
     public static void main(String[] args) {
-        Animal[] animals = {new Cat(), new Tiger(), new Cat(), new Dog()};
+        Animal[] animals = {new Cat(), new Tiger(), new Cat()};
 
         for(Animal oneAnimal : animals) {
             oneAnimal.makeSound();

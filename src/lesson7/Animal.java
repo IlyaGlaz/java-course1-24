@@ -36,4 +36,12 @@ public abstract class Animal {
                 ", weight=" + weight +
                 '}';
     }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
 }

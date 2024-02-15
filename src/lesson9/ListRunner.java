@@ -1,7 +1,6 @@
 package lesson9;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class ListRunner {
@@ -54,6 +53,5 @@ public class ListRunner {
         for (String str : friends) {
             System.out.println(str.length());
         }
-
     }
 }
