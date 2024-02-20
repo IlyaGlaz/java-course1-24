@@ -21,7 +21,7 @@ public class DishRunner {
 
         dishes.stream()
                 .filter(dish -> dish.getCalories() > 100)
-                .map(Dish::getCalories)
+                .map(dish -> dish.getCalories())
                 .collect(Collectors.toSet());
 //                          Dish::getName
 
