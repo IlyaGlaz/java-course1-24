@@ -14,7 +14,9 @@ public abstract class Animal {
         System.out.println("Animal constr");
     }
 
-    abstract void makeSound();
+    void makeSound() {
+
+    };
 
     void goHunt() {
         System.out.printf("Hunt");

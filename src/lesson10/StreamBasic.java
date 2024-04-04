@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-
-import static java.util.stream.Collectors.toList;
+import java.util.function.Function;
 
 public class StreamBasic {
 
@@ -23,6 +22,7 @@ public class StreamBasic {
 
     public static List<String> getLowCaloricDishesNamesInJava7(List<Dish> dishes) {
         List<Dish> lowCaloricDishes = new ArrayList<>();
+
         for (Dish d : dishes) {
             if (d.getCalories() < 400) {
                 lowCaloricDishes.add(d);
@@ -30,6 +30,7 @@ public class StreamBasic {
         }
 
         List<String> lowCaloricDishesName = new ArrayList<>();
+
         Collections.sort(lowCaloricDishes, new Comparator<Dish>() {
             @Override
             public int compare(Dish d1, Dish d2) {
@@ -44,16 +45,14 @@ public class StreamBasic {
     }
 
     public static List<String> getLowCaloricDishesNamesInJava8(List<Dish> dishes) {
-        List<String> collect = dishes.stream()
-                .filter((Dish dish) -> {
-                    return dish.getCalories() < 400;
-                })
-                .sorted()
-                .map((Dish dish) -> {
-                    return dish.getName();
-                })
-                .collect(toList());
+        Function<Dish, String> func = (Dish dish) -> dish.getName();
 
-        return collect;
+        dishes.stream()
+                .filter(dish -> dish.getCalories() < 400)
+                .sorted()
+                .map(func)
+                .forEach(str -> System.out.println(str));
+
+        return Collections.emptyList();
     }
 }

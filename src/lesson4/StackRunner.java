@@ -10,6 +10,7 @@ public class StackRunner {
 
     static void func1() {
         int num = 10;
+        double someNum = 1.222222;
         System.out.println("In func1");
         func2(num);
     }

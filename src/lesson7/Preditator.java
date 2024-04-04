@@ -8,6 +8,10 @@ public interface Preditator {
     void runFast();
 
     default void someMethod() {
+        someStaticMethod();
+    }
+
+    static void someStaticMethod() {
 
     }
 

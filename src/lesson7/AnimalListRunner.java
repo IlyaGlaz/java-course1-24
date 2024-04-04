@@ -9,7 +9,7 @@ public class AnimalListRunner {
         Animal dog1 = new Dog(22, 77);
         Animal dog2= new Dog(100, 40);
 
-        ArrayList<Animal> animals = new ArrayList<>();
+        List<Animal> animals = new ArrayList<>();
 
         animals.add(dog);
         animals.add(dog1);

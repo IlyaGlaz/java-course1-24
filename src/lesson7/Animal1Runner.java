@@ -1,12 +1,17 @@
 package lesson7;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Animal1Runner {
     public static void main(String[] args) {
+    }
+//    public static void main(String[] args) {
 //        AnimalSecond animal = new AnimalSecond(44, 22);
 //        AnimalSecond animal1 = new AnimalSecond(20, 22);
 //
 //        System.out.println(compareWeight(animal, animal1));
-
+//
 //        System.out.println(animal);
 //        System.out.println(animal.equals(animal1));
 //
@@ -17,19 +22,24 @@ public class Animal1Runner {
 //
 //        cat.makeSound();
 //        cat.playWithMe();
-
+//
 //        Tiger tiger = new Tiger(44, 10, "Yellow");
 //        Tiger tiger1 = new Tiger(44, 10, "Yellow");
 //        System.out.println(compareWeight(tiger, tiger1));
 //        tiger.playWithMe();
 //        tiger.makeSound();
-
+//
+//        List<String> string = new ArrayList<>();
+//
+//
 //        Animal animalSecond2 = new Cat(55, 20, "Yellow");
-//        Animal animalSecond3 = new Tiger(22, 44, "Black");
-
+//        animalSecond2.goHunt();
+//
 //        animalSecond2.makeSound();
 //        animalSecond3.makeSound();
-    }
+
+
+//    }
 
     public static boolean compareWeight(Cat animal, Cat animal1) {
         return animal.weight == animal1.weight;

@@ -39,8 +39,15 @@ public class Tiger extends Cat implements Preditator, Flyable {
         System.out.println("Run fast");
     }
 
+
+
     @Override
     public void fly() {
 
+    }
+
+    @Override
+    public void someMethod() {
+        Preditator.someStaticMethod();
     }
 }

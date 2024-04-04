@@ -15,7 +15,7 @@ public class ListRunner {
         friends.add("Frodo");
 
         // вставка элемента
-        friends.add(5, "Gendalf");
+        friends.add(20, "Gendalf");
 
         // получение элемента из коллекции
         System.out.println("Получение элемента " + friends.get(2));
